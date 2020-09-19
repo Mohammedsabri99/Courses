@@ -1,0 +1,146 @@
+#sidebar-contact {
+    position: fixed;
+    top: 50%;
+    left: -350px;
+    transform: translateY(-50%);
+    width: 350px;
+    height: auto;
+    padding: 40px;
+    background: linear-gradient(to top right, $main-color, $main-color-2);
+    transition: all .8s ease-in-out;
+    box-shadow: 0 20px 50px rgba($black-color, .5);
+    z-index: 9996;
+    cursor: pointer;
+
+    @include xs {
+        width: 100%;
+        height: 100%;
+        left: -100%;
+    }
+
+    @include sm {
+        width: 100%;
+        height: 100%;
+        left: -100%;
+    }
+
+    @include md {
+        width: 100%;
+        height: 100%;
+        left: -100%;
+    }
+
+    &.active {
+        left: 0;
+        z-index: 9998;
+
+        .toggle {
+            @include xs {
+                top: 0;
+                right:0;
+                transform: translateY(0);
+            }
+
+            @include sm {
+                top: 0;
+                right:0;
+                transform: translateY(0);
+            }
+
+            @include md {
+                top: 0;
+                right:0;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        height: 36px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid rgba($black-color, .5);
+        outline: none;
+    }
+
+    input[type="submit"] {
+        background: $main-color-2;
+        color: $white-color;
+        border: none;
+        font-style: 18px;
+        cursor: pointer;
+    }
+
+    textarea {
+        height: 100px;
+        resize: none;
+    }
+
+    h2 {
+        margin: 0 0 20px;
+        padding: 0;
+        color: $white-color;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 0;
+        right: -48px;
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        background: $main-color-2;
+        cursor: pointer;
+
+        @include xs {
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.5s;
+        }
+
+        @include sm {
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.5s;
+        }
+
+        @include md {
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.5s;
+        }
+
+        &:before {
+            content: '\f0e0';
+            font-family: fontAwesome;
+            color: $white-color;
+            font-size: 30px;
+        }
+
+        &.active:before {
+            content: '\f00d';
+        }
+    }
+
+    .scroll {
+        @include xs {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        @include sm {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        @include md {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+    }
+}

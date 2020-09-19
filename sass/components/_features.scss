@@ -1,0 +1,187 @@
+#features {
+    padding: 100px 0px 100px 0px;
+
+    @include xs {padding: 40px 0px 40px 0px;}
+    @include sm {padding: 40px 0px 40px 0px;}
+    @include md {padding: 40px 0px 40px 0px;}
+
+    .container {
+
+        .paragraph {
+            padding-bottom: 80px;
+
+            @include xs {padding-bottom: 30px;}
+            @include sm {padding-bottom: 30px;}
+            @include md {padding-bottom: 30px;}
+
+            h2 {
+                font-size: $h2-font;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $main-color-2;
+                text-shadow: 0px 5px 0px $black-color;
+                transition: all .8s ease-in-out;
+
+                @include xs {
+                    font-size: 34px;
+                    text-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include sm {
+                    font-size: 34px;
+                    text-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include md {
+                    font-size: 60px;
+                    text-shadow: 0px 3px 0px $black-color;
+                }
+
+                &:hover,
+                &:hover ~ .heading-underline {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+
+            .heading-underline {
+                width: 300px;
+                height: 9px;
+                background-color: $main-color-2;
+                box-shadow: 0px 5px 0px $black-color;
+                margin: 0 auto;
+                transition: all .8s ease-in-out;
+
+                @include xs {
+                    width: 165px;
+                    height: 5px;
+                    box-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include sm {
+                    width: 165px;
+                    height: 5px;
+                    box-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include md {
+                    width: 287px;
+                    height: 5px;
+                    box-shadow: 0px 3px 0px $black-color;
+                }
+            }
+        }
+
+        #accordion {
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border-top: 2px solid $main-color;
+            padding: 0px 0px 260px 0px;
+
+            li {
+                list-style-type: none;
+                display: inline;
+
+                a {
+                    display: inline-block;
+                    width: 19.4%;
+                    line-height: 55px;
+                    text-align: center;
+                    text-decoration: none;
+
+                    @include xs {
+                        width: 19%;
+                        line-height: 50px;
+                    }
+
+                    @include sm {
+                        width: 19%;
+                        line-height: 50px;
+                    }
+
+                    @include md {
+                        width: 19%;
+                        line-height: 50px;
+                    }
+
+                    .svg-inline--fa {
+                        color: $main-color-2;
+                        font-size: 30px;
+
+                        @include xs {font-size: 15px;}
+                        @include sm {font-size: 15px;}
+                        @include md {font-size: 25px;}
+                    }
+
+                    &.active {
+                        background: linear-gradient(to top right, $main-color, $main-color-2);
+
+                        .svg-inline--fa {color: $white-color;}
+                    }
+                }
+
+                .box {
+                    position: absolute;
+                    top: 50px;
+                    display: none;
+                    padding: 20px;
+                    background: linear-gradient(to top right, $main-color, $main-color-2);
+
+                    &.active {display: block;}
+
+                    h1 {
+                        margin: 0;
+                        padding: 0 0 15px;
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        font-family: 'Roboto Slab', sans-serif;
+                        color: $white-color;
+                        font-weight: normal;
+                        border-bottom: 2px solid $white-color;
+
+                        @include xs {
+                            font-size: 18px;
+                            padding: 0 0 8px;
+                        }
+
+                        @include sm {
+                            font-size: 18px;
+                            padding: 0 0 8px;
+                        }
+
+                        @include md {
+                            font-size: 25px;
+                            padding: 0 0 8px;
+                        }
+                    }
+
+                    p {
+                        color: $white-color;
+                        padding-top: 15px;
+                        font-size: 17px;
+
+                        @include xs {
+                            padding-top: 10px;
+                            margin-bottom: 0px;
+                            font-size: 10px;
+                        }
+
+                        @include sm {
+                            padding-top: 10px;
+                            margin-bottom: 0px;
+                            font-size: 10px;
+                        }
+
+                        @include md {
+                            padding-top: 10px;
+                            margin-bottom: 0px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

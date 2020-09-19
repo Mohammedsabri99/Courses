@@ -1,0 +1,196 @@
+#team {
+    padding: 100px 0px 100px 0px;
+
+    @include xs {padding: 40px 0px 40px 0px;}
+    @include sm {padding: 40px 0px 40px 0px;}
+    @include md {padding: 40px 0px 40px 0px;}
+
+    .container {
+
+        .paragraph {
+            padding-bottom: 80px;
+
+            @include xs {padding-bottom: 30px;}
+            @include sm {padding-bottom: 30px;}
+            @include md {padding-bottom: 30px;}
+
+            h2 {
+                font-size: $h2-font;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $main-color-2;
+                text-shadow: 0px 5px 0px $black-color;
+                transition: all .8s ease-in-out;
+
+                @include xs {
+                    font-size: 34px;
+                    text-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include sm {
+                    font-size: 34px;
+                    text-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include md {
+                    font-size: 60px;
+                    text-shadow: 0px 3px 0px $black-color;
+                }
+
+                &:hover,
+                &:hover ~ .heading-underline {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+
+            .heading-underline {
+                width: 170px;
+                height: 9px;
+                background-color: $main-color-2;
+                box-shadow: 0px 5px 0px $black-color;
+                margin: 0 auto;
+                transition: all .8s ease-in-out;
+
+                @include xs {
+                    width: 95px;
+                    height: 5px;
+                    box-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include sm {
+                    width: 95px;
+                    height: 5px;
+                    box-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include md {
+                    width: 163px;
+                    height: 5px;
+                    box-shadow: 0px 3px 0px $black-color;
+                }
+            }
+        }
+
+        .card {
+            position: relative;
+            margin: 0px 20px;
+            padding: 0px;
+            width: 300px;
+            height: 500px;
+            background-color: $black-color;
+            color: $white-color;
+            overflow: hidden;
+            border-radius: 50px 0px 50px 0px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+
+            @include xs {margin: 20px 20px;}
+            @include sm {margin: 20px 20px;}
+            @include md {margin: 20px 20px;}
+            @include lg {margin: 20px 20px;}
+            @include xl {margin: 20px 20px;}
+
+            &:hover {
+                transform: translateY(-20px);
+                box-shadow: 0 20px 20px rgba($main-color-2,.2);
+
+                .imgBx {opacity: 0.5;}
+                .content {bottom: 0;}
+            }
+
+            &:nth-child(1) {
+                .content {background: linear-gradient(0deg, $main-color, $main-color-2, transparent);}
+            }
+
+            &:nth-child(2) {
+                .content {background: linear-gradient(0deg, $main-color, $main-color-2, transparent);}
+            }
+
+            &:nth-child(3) {
+                .content {background: linear-gradient(0deg, $main-color, $main-color-2, transparent);}
+            }
+
+            &:nth-child(4) {
+                .content {background: linear-gradient(0deg, $main-color, $main-color-2, transparent);}
+            }
+
+            .imgBx {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: all .5s ease-in-out;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .content {
+                position: absolute;
+                width: 100%;
+                height: 60%;
+                bottom: -55%;
+                padding: 20px;
+                text-align: center;
+                transition: 0.5s;
+
+                h2 {
+                    margin: 0 0 10px;
+                    padding: 0;
+                    color: $white-color;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+
+                    span {
+                        color: $white-color;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    color: $white-color;
+                    font-size: 16px;
+                    text-align: justify;
+                }
+
+                ul {
+                    display: flex;
+                    margin: 20px 0 0;
+                    padding: 0;
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        list-style-type: none;
+
+                        a {
+                            color: $white-color;
+                            padding: 0 10px;
+                            font-size: 18px;
+
+                            .svg-inline--fa {
+                                transition: all 0.5s ease-in-out;
+
+                                &:hover {
+                                    color: $fifth-color;
+                                    transform: scale(1.5);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

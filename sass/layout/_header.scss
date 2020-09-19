@@ -1,0 +1,54 @@
+#header {
+
+    .navbar {
+        transition: all .8s ease-in-out;
+        background: linear-gradient(to top right, $main-color, $main-color-2);
+        opacity: .9;
+        z-index: 9997;
+
+        &.hide {transform: translateY(-100%);}
+
+        .navbar-brand {
+            img {width: 70%;}
+        }
+    
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        padding: 0 30px;
+                        font-size: 15px;
+                        font-family: 'Lato', sans-serif;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        color: $white-color;
+                        transition: all .8s ease-in-out;
+
+                        @include xs {font-size: 20px;}
+                        @include sm {font-size: 20px;}
+                        @include md {font-size: 20px;}
+
+                        @include lg {
+                            padding: 0 10px;
+                            font-size: 14px;
+                        }
+
+                        @include xl {padding: 0 15px;}
+    
+                        &:hover,
+                        &:focus,
+                        &.active {
+                            color: $main-color-2;
+                            transform: scale(1.6);
+
+                            @include xs {transform: scale(1.1);}
+                            @include sm {transform: scale(1.1);}
+                            @include md {transform: scale(1.1);}
+                            @include lg {transform: scale(1.4);}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

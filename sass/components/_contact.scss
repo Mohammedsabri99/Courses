@@ -1,0 +1,70 @@
+#contact {
+    padding: 100px 0px 100px 0px;
+
+    @include xs {padding: 40px 0px 40px 0px;}
+    @include sm {padding: 40px 0px 40px 0px;}
+    @include md {padding: 40px 0px 40px 0px;}
+
+    .box {
+        position: relative;
+        margin: 0px 20px;
+        background: linear-gradient(to top right, $main-color, $main-color-2);
+        overflow: hidden;
+        border-radius: 4px;
+        box-shadow: 0 0 0 2px rgba(0,7,10,1);
+        cursor: pointer;
+
+        @include xs {margin: 20px 20px;}
+        @include sm {margin: 20px 20px;}
+        @include md {margin: 20px 20px;}
+        @include lg {margin: 20px 20px;}
+        @include xl {margin: 20px 20px;}
+
+        &:hover {
+            .icon {transform: scale(0);}
+
+            .details {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .icon {
+            width: 100%;
+            height: 115%;
+            //background: linear-gradient(to top right, $main-color, $main-color-2);
+            transition: 0.5s;
+
+            .svg-inline--fa {
+                font-size: 50px;
+                line-height: 100px;
+                color: $white-color;
+            }
+        }
+
+        .details {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top right, $main-color, $main-color-2);
+            transition: 0.5s;
+            transform: scale(2);
+            opacity: 0;
+
+            h3 {
+                margin: 0;
+                padding: 0;
+                line-height: 80px;
+                font-size: 30px;
+                font-weight: 700;
+                color: $white-color;
+
+                @include xs {font-size: 20px;}
+                @include sm {font-size: 20px;}
+                @include md {font-size: 20px;}
+            }
+        }
+    }
+}

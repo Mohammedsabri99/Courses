@@ -1,0 +1,513 @@
+doctype html
+|
+|
+html(lang="en")
+    |
+    |
+    head
+        // Basic Page Needs
+        meta(charset="utf-8")
+        title COURSES WEBSITE
+        meta(name="description" content="COURSES WEBSITE")
+        meta(name="keywords" content="")
+        meta(name="author" content="Mohammed Sabri")
+        |
+        |
+        // Mobile Specific Metas
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        |
+        |
+        // Fixed
+        link(rel="stylesheet" href="css/vendor/fixed/fixed.css")
+        |
+        |
+        // Normalize
+        link(rel="stylesheet" href="css/vendor/normalize/normalize.min.css")
+        |
+        |
+        // Wow JS
+        link(rel="stylesheet" href="css/vendor/wow.js/animate.css")
+        |
+        |
+        // FontAwesome
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        |
+        |
+        // Bootstrap
+        link(rel="stylesheet" href="css/vendor/bootstrap/bootstrap.min.css")
+        |
+        |
+        // CSS stylesheet
+        link(rel="stylesheet" href="css/output.css")
+        |
+        |
+        // Favicons
+        link(rel="shortcut icon" href="favicon/favicon-me.ico")
+        |
+        |
+    body(data-spy="scroll" data-target="#navbarResponsive")
+        |
+        |
+        // Preloader
+        #preloader
+            .loading
+                span L
+                span O
+                span A
+                span D
+                span I
+                span N
+                span G
+                span .
+                span .
+                span .
+        |
+        |
+        // Contact Box
+        #sidebar-contact
+            .toggle
+            .scroll
+                h2 Send Us
+                form
+                    input(type="text" name="" placeholder="Name")
+                    input(type="email" name="" placeholder="Email")
+                    input(type="rel" name="" placeholder="Phone Number")
+                    textarea(placeholder="Message")
+                    input(type="submit" name="" value="Send")
+        |
+        |
+        // Start Header Part
+        #header
+
+            // Start Navigation
+            nav.navbar.navbar-expand-md.navbar-dark.fixed-top
+
+                // Navbar-Brand
+                a(class="navbar-brand" class="wow bounceIn" href="#")
+                    img(src="img/MS Design(magenta-white).png")
+                button(class="navbar-toggler" class="wow bounceIn" type="button" data-toggle="collapse" data-target="#navbarResponsive")
+                    span(class="navbar-toggler-icon")
+                // Nav-Item
+                .collapse.navbar-collapse#navbarResponsive
+                    ul.navbar-nav.ml-auto
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#header") Home
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#course") Course
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#features") Features
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#resources") Resources
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#team") Team
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#clients") Clients
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link" href="#contact") Contact
+            // End Navigation
+            |
+            |
+        // End Header Part
+        |
+        |
+        // Start Main Part
+        #main
+            |
+            |
+            // Start Home Section
+            #home
+                // Start LandingPage
+                .container-fluid
+                    .row.justify-content-around.text-center
+                        .col-xl.wow.bounceIn
+                            img(src="img/professor.png")
+                        .col-xl.wow.bounceIn
+                            .caption
+                                h1.wow.bounceIn Chinese Course From Scratch
+                                h2.wow.bounceIn Udemy chinese course
+                                a(href="#course" class="btn btn-lg btn-1" class="wow bounceIn") Get Startsed
+                                    i(class="fas fa-hand-point-down")
+            // End Home Section
+            |
+            |
+            // Start Course Section
+            #course
+                .container
+                    .row.justify-content-around
+                        .paragraph.col-lg.text-center.wow.bounceIn
+                            h2.wow.bounceIn Course Levels
+                            .heading-underline
+
+                    .row.justify-content-around.text-center
+                        .card.col-lg-3.wow.bounceIn
+                            input(type="checkbox" name="")
+                            .toggle +
+                            .imgBx
+                                img(src="img/HSK1.png")
+                            .details
+                                h3 Course Description
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur, fuga maxime, tempore numquam beatae amet, sunt debitis nisi eum aliquam perferendis temporibus doloribus laboriosam praesentium vitae necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur.
+                            
+                        .card.col-lg-3.wow.bounceIn
+                            input(type="checkbox" name="")
+                            .toggle +
+                            .imgBx
+                                img(src="img/HSK2.png")
+                            .details
+                                h3 Course Description
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur, fuga maxime, tempore numquam beatae amet, sunt debitis nisi eum aliquam perferendis temporibus doloribus laboriosam praesentium vitae necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur.
+
+                        .card.col-lg-3.wow.bounceIn
+                            input(type="checkbox" name="")
+                            .toggle +
+                            .imgBx
+                                img(src="img/HSK3.png")
+                            .details
+                                h3 Course Description
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur, fuga maxime, tempore numquam beatae amet, sunt debitis nisi eum aliquam perferendis temporibus doloribus laboriosam praesentium vitae necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur.
+
+                        .card.col-lg-3.wow.bounceIn
+                            input(type="checkbox" name="")
+                            .toggle +
+                            .imgBx
+                                img(src="img/HSK4.png")
+                            .details
+                                h3 Course Description
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur, fuga maxime, tempore numquam beatae amet, sunt debitis nisi eum aliquam perferendis temporibus doloribus laboriosam praesentium vitae necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur.
+                            
+                        .card.col-lg-3.wow.bounceIn
+                            input(type="checkbox" name="")
+                            .toggle +
+                            .imgBx
+                                img(src="img/HSK5.png")
+                            .details
+                                h3 Course Description
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur, fuga maxime, tempore numquam beatae amet, sunt debitis nisi eum aliquam perferendis temporibus doloribus laboriosam praesentium vitae necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur.
+
+                        .card.col-lg-3.wow.bounceIn
+                            input(type="checkbox" name="")
+                            .toggle +
+                            .imgBx
+                                img(src="img/HSK6.png")
+                            .details
+                                h3 Course Description
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur, fuga maxime, tempore numquam beatae amet, sunt debitis nisi eum aliquam perferendis temporibus doloribus laboriosam praesentium vitae necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem architecto pariatur.
+            // End Course Section
+            |
+            |
+            // Start Features Section
+            #features
+                .container
+                    .row.justify-content-around
+                        .paragraph.col-lg.text-center.wow.bounceIn
+                            h2.wow.bounceIn Features
+                            .heading-underline
+
+                    .row
+                        ul#accordion.wow.bounceIn
+                            li.wow.bounceIn
+                                a(href="#accordion" class="active")
+                                    i(class="fas fa-headphones")
+                                .box.active
+                                    h1 Listening
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque in, nostrum debitis explicabo, iure quae dolorem voluptas est excepturi magnam maiores vel ab quis fugiat a. Nisi dolore error fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                            li.wow.bounceIn
+                                a(href="#accordion")
+                                    i(class="fas fa-book-reader")
+                                .box
+                                    h1 Reading
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque in, nostrum debitis explicabo, iure quae dolorem voluptas est excepturi magnam maiores vel ab quis fugiat a. Nisi dolore error fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi rem accusantium ut illum rerum debitis cupiditate unde, in facere doloribus fuga sunt repellendus tempora repellat odit voluptate esse iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                
+                            li.wow.bounceIn
+                                a(href="#accordion")
+                                    i(class="fas fa-edit")
+                                .box
+                                    h1 Writing
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque in, nostrum debitis explicabo, iure quae dolorem voluptas est excepturi magnam maiores vel ab quis fugiat a. Nisi dolore error fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi rem accusantium ut illum rerum debitis cupiditate unde.
+                                
+                            li.wow.bounceIn
+                                a(href="#accordion")
+                                    i(class="fas fa-users")
+                                .box
+                                    h1 groups
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque in, nostrum debitis explicabo, iure quae dolorem voluptas est excepturi magnam maiores vel ab quis fugiat a. Nisi dolore error fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi rem accusantium ut illum rerum debitis cupiditate unde, in facere doloribus fuga sunt repellendus tempora repellat odit voluptate esse iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellat ipsa eius doloremque voluptatum minima ratione maxime aliquam odit iste assumenda consequuntur quidem fuga quae qui, omnis deleniti totam reprehenderit?
+
+                            li.wow.bounceIn
+                                a(href="#accordion")
+                                    i(class="fas fa-graduation-cap")
+                                .box
+                                    h1 Graduate
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque in, nostrum debitis explicabo, iure quae dolorem voluptas est excepturi magnam maiores vel ab quis fugiat a. Nisi dolore error fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi rem accusantium ut illum rerum debitis cupiditate unde, in facere doloribus fuga sunt repellendus tempora repellat odit voluptate esse iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                
+
+            // End Features Section
+            |
+            |
+            // Start Resources Section
+            #resources
+                .container
+                    .row.justify-content-around
+                        .paragraph.col-lg.text-center.wow.bounceIn
+                            h2.wow.bounceIn Resources
+                            .heading-underline
+
+                    .row
+                        .box.col-lg.wow.bounceIn
+                            .thumb.wow.bounceIn
+                                img(src="img/teacher.png")
+                            .details.wow.bounceIn
+                                .content
+                                    i(class="fas fa-chalkboard-teacher")
+                                    h3 professional teachers
+                                    a(href="#resources") Read More
+                        .box.col-lg.wow.bounceIn
+                            .thumb.wow.bounceIn
+                                img(src="img/courses_places.png")
+                            .details.wow.bounceIn
+                                .content
+                                    i(class="fas fa-school")
+                                    h3 Modern Halls
+                                    a(href="#resources") Read More
+                        .box.col-lg.wow.bounceIn
+                            .thumb.wow.bounceIn
+                                img(src="img/courses.png")
+                            .details.wow.bounceIn
+                                .content
+                                    i(class="fas fa-book-open")
+                                    h3 Advanced Materials
+                                    a(href="#resources") Read More
+                        .box.col-lg.wow.bounceIn
+                            .thumb.wow.bounceIn
+                                img(src="img/customer_service.jpg")
+                            .details.wow.bounceIn
+                                .content
+                                    i(class="fas fa-headphones")
+                                    h3 customer service
+                                    a(href="#resources") Read More
+            // End Resources Section
+            |
+            |
+            // Start Team Section
+            #team
+                .container
+                    .row.justify-content-around
+                        .paragraph.col-lg.text-center.wow.bounceIn
+                            h2.wow.bounceIn team
+                            .heading-underline
+                    
+                    .row.justify-content-around.text-center
+                        .card.col-xl.wow.bounceIn
+                            .imgBx
+                                img(src="img/teacher_1.jpg")
+                            .content
+                                h2 teacher <br>
+                                    span Chinese teacher
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                ul
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-facebook-f")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-twitter")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-weixin")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-google-plus-g")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-linkedin-in")
+
+                        .card.col-xl.wow.bounceIn
+                            .imgBx
+                                img(src="img/teacher_2.jpg")
+                            .content
+                                h2 teacher <br>
+                                    span Chinese teacher
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                ul
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-facebook-f")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-twitter")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-weixin")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-google-plus-g")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-linkedin-in")
+                        .card.col-xl.wow.bounceIn
+                            .imgBx
+                                img(src="img/teacher_3.jpg")
+                            .content
+                                h2 teacher <br>
+                                    span Chinese teacher
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                ul
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-facebook-f")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-twitter")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-weixin")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-google-plus-g")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-linkedin-in")
+
+                        .card.col-xl.wow.bounceIn
+                            .imgBx
+                                img(src="img/teacher_4.jpg")
+                            .content
+                                h2 teacher <br>
+                                    span Chinese teacher
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                ul
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-facebook-f")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-twitter")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-weixin")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-google-plus-g")
+                                    li
+                                        a(href="#team")
+                                            i(class="fab fa-linkedin-in")
+
+            // End Team Section
+            |
+            |
+            // Start Clients Section
+            #clients
+                .container
+                    .row.justify-content-around
+                        .paragraph.col-lg.text-center.wow.bounceIn
+                            h2.wow.bounceIn clients
+                            .heading-underline
+
+                    .row.justify-content-around.text-center
+                        .box.col-xl.wow.bounceIn
+                            .image
+                                img(src="img/client_1.jpg")
+                            .content
+                                h2 My Opinion
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto.
+
+                        .box.col-xl.wow.bounceIn
+                            .image
+                                img(src="img/client_2.jpg")
+                            .content
+                                h2 My Opinion
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto.
+                        
+                        .box.col-xl.wow.bounceIn
+                            .image
+                                img(src="img/client_3.jpg")
+                            .content
+                                h2 My Opinion
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto.
+                        
+                        .box.col-xl.wow.bounceIn
+                            .image
+                                img(src="img/client_4.jpg")
+                            .content
+                                h2 My Opinion
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis libero magnam eum iusto.
+            // End Clients Section
+            |
+            |
+            // Start Contact Section
+            #contact
+                .container
+                    .row.justify-content-around
+                        .box.col-xl.text-center.wow.bounceIn
+                            .icon
+                                i(class="fas fa-map-marked-alt")
+                            .details
+                                h3 Egypt
+                        
+                        .box.col-xl.text-center.wow.bounceIn
+                            .icon
+                                i(class="fas fa-phone-volume")
+                            .details
+                                h3 (+02) 888 8888 888
+
+                        .box.col-xl.text-center.wow.bounceIn
+                            .icon
+                                i(class="fas fa-mail-bulk")
+                            .details
+                                h3 example@example.com
+            // End Contact Section
+            |
+            |
+        //End Main Part
+        |
+        |
+        // Start Footer Part
+        footer
+            .container
+
+                .row.justify-content-center
+                    .col-xs-12.wow.bounceIn
+                        #go-top
+                            a(class="gototop" href="#top")
+                                i(class="fas fa-chevron-circle-up")
+                
+                .row.justify-content-center
+                    .col-xs-12.wow.bounceIn
+                        a(class="navbar-brand" class="wow bounceIn" href="#footer")
+                            img(src="img/MS Design(magenta-white).png")
+
+                .row.justify-content-center
+                    .col-xs-12.wow.bounceIn
+                        h4 C.V &copy; Copyright 2019
+                    .col-xs-12.wow.bounceIn
+                        h4 Designed by
+                            a(href="#footer" title="styleshout" target="_blank")  Mohammed Sabri
+        // End Footer Part
+        |
+        |
+        // Start Script Source Files
+        |
+        |
+        // jQuery CDN
+        script(src="js/vendor/jquery/jquery-3.3.1.js")
+        |
+        |
+        // Bootstrap
+        script(src="js/vendor/bootstrap/bootstrap.min.js")
+        |
+        |
+        // Wow JS
+        script(src="js/vendor/wow.js/wow.min.js")
+        |
+        |
+        // Font-Awesome
+        script(src="js/vendor/fontawesome/all.min.js")
+        |
+        |
+        // Main JS
+        script(src="js/main.js")
+        |
+        |
+        // End Script Source Files
+

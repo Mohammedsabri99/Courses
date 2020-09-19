@@ -1,0 +1,58 @@
+footer {
+    border-top: 2px solid $third-color;
+    margin-top: 0px;
+    background: linear-gradient(to top right, $main-color, $main-color-2);
+
+    @include xs {margin-top: 30px;}
+    @include sm {margin-top: 30px;}
+    @include md {margin-top: 20px;}
+    @include lg {margin-top: 20px;}
+    @include xl {margin-top: 20px;}
+
+    #go-top {
+        font-size: 50px;
+        margin-top: -63px;
+
+        @include xs {margin-top: -64px;}
+    
+        .svg-inline--fa {
+            color: $main-color-2;
+
+            &:hover {color: $fifth-color;}
+        }
+    }
+
+    .navbar-brand {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h4 {
+        color: $white-color;
+        font-weight: 700;
+
+        @include xs {
+            margin: 0px;
+            font-size: 19px;
+        }
+
+        @include sm {
+            margin: 0px;
+            font-size: 19px;
+        }
+        @include md {
+            margin: 0px;
+            font-size: 25px;
+        }
+
+        a {
+            color: $main-color-2;
+            text-decoration: none;
+
+            &:hover {
+                color: $fifth-color;
+                text-decoration: none;
+            }
+        }
+    }
+}

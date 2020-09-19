@@ -1,0 +1,213 @@
+#course {
+    background: linear-gradient(to top right, $main-color, $main-color-2);
+    padding: 100px 0px 100px 0px;
+
+    @include xs {padding: 40px 0px 40px 0px;}
+    @include sm {padding: 40px 0px 40px 0px;}
+    @include md {padding: 40px 0px 40px 0px;}
+    
+    .container {
+        
+        .paragraph {
+            padding-bottom: 80px;
+
+            @include xs {padding-bottom: 30px;}
+            @include sm {padding-bottom: 30px;}
+            @include md {padding-bottom: 30px;}
+
+            h2 {
+                font-size: $h2-font;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $white-color;
+                text-shadow: 0px 5px 0px $black-color;
+                transition: all .8s ease-in-out;
+
+                @include xs {
+                    font-size: 34px;
+                    text-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include sm {
+                    font-size: 34px;
+                    text-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include md {
+                    font-size: 60px;
+                    text-shadow: 0px 3px 0px $black-color;
+                }
+
+                &:hover,
+                &:hover ~ .heading-underline {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+
+            .heading-underline {
+                width: 450px;
+                height: 9px;
+                background-color: $white-color;
+                box-shadow: 0px 5px 0px $black-color;
+                margin: 0 auto;
+                transition: all .8s ease-in-out;
+
+                @include xs {
+                    width: 260px;
+                    height: 5px;
+                    box-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include sm {
+                    width: 260px;
+                    height: 5px;
+                    box-shadow: 0px 3px 0px $black-color;
+                }
+
+                @include md {
+                    width: 450px;
+                    height: 5px;
+                    box-shadow: 0px 3px 0px $black-color;
+                }
+            }
+        }
+        
+        .card {
+            position: relative;
+            width: 300px;
+            height: 500px;
+            margin: 0 20px;
+            padding: 0px;
+            overflow: hidden;
+            background: transparent;
+            color: $white-color;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+            border-radius: 50px 0px 50px 0px;
+            transition: all .5s ease-in-out;
+
+            @include xs {margin: 20px 20px;}
+            @include sm {margin: 20px 20px;}
+            @include md {margin: 20px 20px;}
+            @include lg {margin: 20px 20px;}
+
+            &:nth-child(4) {
+                margin-top: 80px;
+
+                @include xs {margin-top: 20px;}
+                @include sm {margin-top: 20px;}
+                @include md {margin-top: 20px;}
+                @include lg {margin-top: 20px;}
+            }
+
+            &:nth-child(5) {
+                margin-top: 80px;
+
+                @include xs {margin-top: 20px;}
+                @include sm {margin-top: 20px;}
+                @include md {margin-top: 20px;}
+                @include lg {margin-top: 20px;}
+            }
+
+            &:nth-child(6) {
+                margin-top: 80px;
+
+                @include xs {margin-top: 20px;}
+                @include sm {margin-top: 20px;}
+                @include md {margin-top: 20px;}
+                @include lg {margin-top: 20px;}
+            }
+
+            input,
+            .toggle {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                outline: none;
+                cursor: pointer;
+                z-index: 10;
+            }
+
+            input {opacity: 0;}
+
+            .toggle {
+                pointer-events: none;
+                border-radius: 50%;
+                background: $white-color;
+                transition: all .5s ease-in-out;
+                text-align: center;
+                line-height: 50px;
+                font-size: 36px;
+                color: $secondary-color;
+                box-shadow: 0 0 0 0px $secondary-color;
+            }
+
+            input:checked ~ .toggle {
+                color: $main-color-2;
+                box-shadow: 0 0 0 550px $main-color-2;
+                transform: rotate(360deg);
+            }
+
+            .imgBx,
+            .details {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .imgBx {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .details {
+                padding: 20px;
+                pointer-events: none;
+                transition: 0.5s;
+                opacity: 0;
+                z-index: 11;
+
+                h3 {
+                    margin-bottom: 30px;
+                    font-family: 'Roboto Slab', sans-serif;
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: $white-color;
+
+                    @include xs {
+                        font-size: 20px;
+                        margin: 15px 0px 15px 0px;
+                    }
+
+                    @include sm {
+                        font-size: 20px;
+                        margin: 15px 0px 15px 0px;
+                    }
+
+                    @include md {
+                        font-size: 20px;
+                        margin: 15px 0px 15px 0px;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 16px;
+                    color: $white-color;
+                }
+            }
+
+            input:checked ~ .details {
+                opacity: 1;
+                transition-delay: 0.5s;
+            }
+        }
+    }
+}
